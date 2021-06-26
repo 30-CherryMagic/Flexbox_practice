@@ -1,0 +1,6 @@
+■ Design by: hexschool (CC-BY)
+■ Code by: PENG,HSIAO-LI
+■ CSS Preprocessor: sass
+■ HTML Preprocessor: pug
+■ Production Time: 5hours
+■ View in Codepen: https://codepen.io/peng-hsiao-li/pen/vYxROgQ
