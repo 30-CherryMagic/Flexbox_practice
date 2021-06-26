@@ -1,0 +1,333 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Noto+Serif+TC:wght@600&display=swap");
+* {
+  font-family: "PingFang TC", "Noto Sans TC";
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+}
+header .logo {
+  width: 210px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+header nav li {
+  list-style: none;
+  line-height: 22px;
+}
+header nav li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #3f5d45;
+}
+.banner {
+  max-width: 940px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.banner img {
+  width: 100%;
+}
+
+.contents {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.contents .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+}
+.contents .main .category {
+  width: 31.9%;
+}
+.contents .main .category li {
+  width: 100%;
+  height: 65px;
+  list-style: none;
+  text-align: center;
+  line-height: 65px;
+  border: 1px solid #EAF0ED;
+}
+.contents .main .category li a {
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+  height: 100%;
+  color: #3f5d45;
+}
+.contents .main .category .title {
+  background-color: #3f5d45;
+  color: #fff;
+}
+.contents .main .category .selectable:hover {
+  background-color: #EAF0ED;
+}
+.contents .main .items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 66%;
+  text-align: center;
+}
+.contents .main .items .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48.4%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.contents .main .items .item:before {
+  content: "本日精選";
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 36px;
+  height: 105px;
+  writing-mode: vertical-rl;
+  background-color: #3f5d45;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 10;
+  color: #fff;
+}
+.contents .main .items .item:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true");
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.contents .main .items .item img {
+  width: 100%;
+}
+.contents .main .items .item .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+}
+.contents .main .items .item .info .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58%;
+  height: 100%;
+  border-left: 1px solid #EAF0ED;
+}
+.contents .main .items .item .info .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42%;
+  height: 100%;
+  border-left: 1px solid #EAF0ED;
+  border-right: 1px solid #EAF0ED;
+}
+.contents .main .items .item .add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 65px;
+  width: 100%;
+  font-size: 24px;
+  color: #3f5d45;
+  background-color: #EAF0ED;
+}
+.contents .main .items .item .add:hover {
+  color: #000;
+  background-color: #ccdbd4;
+}
+.contents .pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 0 60px 0;
+  width: 100%;
+  height: 60px;
+}
+.contents .pages ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fff;
+  width: 31.9%;
+  text-align: center;
+}
+.contents .pages ul li {
+  border: 1px solid #EAF0ED;
+  list-style: none;
+  width: 20%;
+  height: 100%;
+  border: 1px solid #EAF0ED;
+}
+.contents .pages ul li a {
+  display: block;
+  line-height: 60px;
+  text-decoration: none;
+  color: #000;
+}
+.contents .pages ul li a:hover {
+  background-color: #EAF0ED;
+}
+.contents .pages ul li a img {
+  vertical-align: middle;
+}
+
+.mail {
+  height: 116px;
+  background-color: #3f5d45;
+}
+.mail .subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100%;
+}
+.mail .subscribe .sweet_mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 56px;
+}
+.mail .subscribe .sweet_mail .mark {
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.mail .subscribe .sweet_mail h2 {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.mail .subscribe .submission {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 56px;
+}
+.mail .subscribe .submission .mailpic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAF0ED;
+  height: 56px;
+  width: 56px;
+}
+.mail .subscribe .submission .mailpic img {
+  width: 24px;
+}
+.mail .subscribe .submission input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 0;
+  background-color: #EAF0ED;
+  width: 324px;
+  height: 100%;
+}
+.mail .subscribe .submission a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 56px;
+  background-color: #FFE180;
+}
+.mail .subscribe .submission a img {
+  width: 24px;
+}
+
+footer {
+  height: 340px;
+  background-color: #EAF0ED;
+}
+footer .infomations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+footer .infomations .left_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+footer .infomations .left_info .logo_word img {
+  width: 170px;
+}
+footer .infomations .left_info .contact_info {
+  padding: 0;
+  margin: 0;
+}
+footer .infomations .left_info .contact_info li {
+  list-style: none;
+  color: #3f5d45;
+  font-size: 16px;
+  line-height: 24px;
+}
+footer .infomations .right_info h2, footer .infomations .right_info pre {
+  writing-mode: vertical-rl;
+  font-size: 22px;
+  font-family: "Noto Serif TC";
+  color: #3f5d45;
+}
+footer .bottom_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: bottom;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  line-height: 32px;
+}
+footer .bottom_bar .sns img {
+  width: 32px;
+  margin-right: 8px;
+}
+footer .bottom_bar .copyright p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}

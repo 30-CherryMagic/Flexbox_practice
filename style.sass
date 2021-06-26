@@ -1,0 +1,249 @@
+$dark_green: #3f5d45
+$light_green: #EAF0ED
+$yellow: #FFE180
+$white: #fff
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Noto+Serif+TC:wght@600&display=swap')
+
+@mixin mw($mw)
+  max-width: $mw
+  margin: 0 auto
+
+@mixin flex_set($d:flex,$fxd:row,$jc:space-between,$ai:center)
+  display: $d
+  flex-direction: $fxd
+  justify-content: $jc
+  align-items: $ai
+
+@mixin center_center
+  display: flex
+  justify-content: center
+  align-items: center
+  
+*
+  font-family: 'PingFang TC','Noto Sans TC'
+
+html,body
+  margin: 0
+  padding: 0
+header
+  +mw(940px)
+  +flex_set
+  margin: 30px auto
+  .logo
+    width: 210px
+  nav
+    +flex_set
+    width: 40%
+    li
+      list-style: none
+      line-height: 22px
+      a  
+        font-size: 16px
+        text-decoration: none
+        color: $dark_green
+      img
+.banner
+  +mw(940px)
+  margin-bottom: 60px
+  img
+    width: 100%
+.contents
+  +mw(940px)
+  .main
+    +flex_set(flex,row,space-between,top)
+    .category
+      width: 31.9%
+      li
+        width: 100%
+        height: 65px
+        list-style: none
+        text-align: center
+        line-height: 65px
+        border: 1px solid $light_green
+        a 
+          text-decoration: none
+          font-size: 24px
+          display: block
+          height: 100%
+          color: $dark_green
+      .title
+        background-color: $dark_green
+        color: $white
+      .selectable:hover
+        background-color: $light_green
+    .items
+      +flex_set(flex,row,space-between,center)
+      flex-wrap: wrap
+      width: 66%
+      text-align: center
+      .item
+        +flex_set(flex,column,center,center)
+        width: 48.4%
+        margin-bottom: 20px
+        position: relative
+        &:before
+          content: '本日精選'
+          font-size: 16px
+          letter-spacing: 3px
+          line-height: 36px
+          height: 105px
+          writing-mode: vertical-rl
+          background-color: $dark_green
+          position: absolute
+          top: 0
+          left: 20px
+          z-index: 10
+          color: $white
+        &:after
+          content: ''
+          position: absolute
+          width: 20px
+          height: 20px  
+          background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true")
+          top: 20px
+          right: 20px
+          cursor: pointer
+        img
+          width: 100%
+        .info
+          +flex_set(flex,row,center,center)
+          height: 56px
+          width: 100%
+          .name
+            +center_center
+            width: 58%
+            height: 100%
+            border-left: 1px solid $light_green
+          .price
+            +center_center
+            width: 42%
+            height: 100%
+            border-left: 1px solid $light_green
+            border-right: 1px solid $light_green
+        .add
+          +center_center
+          text-decoration: none
+          height: 65px
+          width: 100%
+          font-size: 24px
+          color: $dark_green
+          background-color: $light_green
+        .add:hover
+          color: #000
+          background-color: darken($light_green,10%) 
+  .pages
+    +flex_set(flex,row,flex-end,center)
+    margin: 10px 0 60px 0
+    width: 100%
+    height: 60px
+    ul
+      +flex_set(flex,row,flex-end,center)
+      background-color: $white
+      width: 31.9%
+      text-align: center
+      li
+        border: 1px solid $light_green
+        list-style: none
+        width: 20%
+        height: 100%
+        border: 1px solid $light_green
+        a
+          display: block
+          line-height: 60px
+          text-decoration: none
+          color: #000
+          &:hover
+            background-color: $light_green
+          img
+            vertical-align: middle
+  
+.mail
+  height: 116px
+  background-color: $dark_green
+  .subscribe 
+    +flex_set(flex,row,space-between,center)
+    max-width: 800px
+    margin: 0 auto
+    height: 100%
+    .sweet_mail
+      +flex_set(flex,row,space-between,center)
+      line-height: 56px
+      .mark
+        width: 40px
+        vertical-align: middle
+        margin-right: 20px
+      h2
+        font-size: 24px
+        font-weight: 300
+        letter-spacing: 1px
+        color: $white
+    .submission
+      +flex_set(flex,row,flex-end,center)
+      height: 56px
+      .mailpic
+        +center_center
+        background-color: $light_green
+        height: 56px
+        width: 56px
+        img 
+          width: 24px
+      input
+        border: none
+        //outline: none 取消click時出現的外框
+        outline: none 
+        font-size: 20px
+        padding: 0
+        background-color: $light_green
+        width: 324px
+        height: 100%
+      a
+        +center_center
+        height: 56px
+        width: 56px
+        background-color: $yellow
+        img
+          width: 24px
+footer
+  height: 340px
+  background-color: $light_green
+  .infomations
+    +flex_set(flex,row,space-between,top)
+    +mw(800px)
+    padding-top: 30px
+    .left_info
+      +flex_set(flex,column,space-between,left)
+      .logo_word
+        img
+          width: 170px
+      .contact_info
+        padding: 0
+        margin: 0
+        li
+          list-style: none
+          color: $dark_green
+          font-size: 16px
+          line-height: 24px
+    .right_info
+      h2, pre
+        //改為直式
+        writing-mode: vertical-rl
+        font-size: 22px
+        font-family: 'Noto Serif TC'
+        color: $dark_green
+  .bottom_bar
+    +flex_set(flex,row,space-between,bottom)
+    +mw(800px)
+    margin-top: 30px
+    line-height: 32px
+    .sns
+      img
+        width: 32px
+        margin-right: 8px
+    .copyright
+      p
+        font-size: 16px
+        padding: 0
+        margin: 0
+
+        
