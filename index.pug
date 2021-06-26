@@ -7,13 +7,14 @@ html
 
     title Flexbox 切版任務
 
-    link(rel="stylesheet", href="style.css")
+    link(rel="stylesheet", href="sass/style.css")
 
 
   body   
 
   header
-    img.logo(src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/student-week1/logo-all-dark.svg", alt="LOGO")
+    h1
+      img.logo(src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/student-week1/logo-all-dark.svg", alt="Sweetaste*")
     nav
       li 
         a.hmoe_page(href="#") 首頁
@@ -31,48 +32,52 @@ html
       .category
         li.title 甜點類別
         li 
-          a.selectable(href="#") 所有甜點（48） 
+          a.selectable(href="#") 
+            h2 所有甜點（48） 
         li 
-          a.selectable(href="#") 本日精選（10）
+          a.selectable(href="#") 
+            h2 本日精選（10）
         li 
-          a.selectable(href="#") 人氣推薦（26）
+          a.selectable(href="#") 
+            h2 人氣推薦（26）
         li 
-          a.selectable(href="#") 新品上市（12）
+          a.selectable(href="#") 
+            h2 新品上市（12）
       .items
         .item
           img(src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true", alt="")
           .info
-            .name 焦糖馬卡龍
+            h3.name 焦糖馬卡龍
             .price NT$ 450
           a.add(href="#") 加入購物車  
         .item
           img(src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-2.png?raw=true", alt="")
           .info
-            .name 焦糖馬卡龍
+            h3.name 焦糖馬卡龍
             .price NT$ 450
           a.add(href="#") 加入購物車  
         .item
           img(src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-3.png?raw=true", alt="")
           .info
-            .name 焦糖馬卡龍
+            h3.name 焦糖馬卡龍
             .price NT$ 450
           a.add(href="#") 加入購物車  
         .item
           img(src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-4.png?raw=true", alt="")
           .info
-            .name 焦糖馬卡龍
+            h3.name 焦糖馬卡龍
             .price NT$ 450
           a.add(href="#") 加入購物車  
         .item
           img(src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-5.png?raw=true", alt="")
           .info
-            .name 焦糖馬卡龍
+            h3.name 焦糖馬卡龍
             .price NT$ 450
           a.add(href="#") 加入購物車  
         .item
           img(src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-6.png?raw=true", alt="")
           .info
-            .name 焦糖馬卡龍
+            h3.name 焦糖馬卡龍
             .price NT$ 450
           a.add(href="#") 加入購物車  
     .pages
@@ -106,8 +111,10 @@ html
         .logo_word
           img(src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/student-week1/logotype-lg-dark.svg", alt="logo")
         ul.contact_info
-          li.tele 07-1234-5678   
-          li.email sweetaste@email.com
+          li.tele 
+            a(href="tel:+886-712345678") 07-1234-5678   
+          li.email 
+            a(href="mailto:sweetaste@email.com") sweetaste@email.com
           li.addr 800 高雄市新興區幸福路 520 號
       .right_info
         .slogan

@@ -26,6 +26,11 @@ $white: #fff
 html,body
   margin: 0
   padding: 0
+
+
+
+
+
 header
   +mw(940px)
   +flex_set
@@ -61,12 +66,18 @@ header
         text-align: center
         line-height: 65px
         border: 1px solid $light_green
+        
         a 
           text-decoration: none
           font-size: 24px
           display: block
           height: 100%
           color: $dark_green
+          h2
+            font-size: 24px
+            font-weight: bold
+            padding: 0
+            margin: 0
       .title
         background-color: $dark_green
         color: $white
@@ -110,8 +121,10 @@ header
           +flex_set(flex,row,center,center)
           height: 56px
           width: 100%
-          .name
+          h3.name
             +center_center
+            font-size: 20px
+            font-weight: normal
             width: 58%
             height: 100%
             border-left: 1px solid $light_green
@@ -224,6 +237,12 @@ footer
           color: $dark_green
           font-size: 16px
           line-height: 24px
+          a
+            text-decoration: none
+            color: #3F5D45
+            &:hover
+              background-color: darken( #EAF0ED,10%)
+
     .right_info
       h2, pre
         //改為直式
