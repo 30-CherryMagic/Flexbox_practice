@@ -1,6 +1,10 @@
 ■ Design by: hexschool (CC-BY)
 ■ Code by: PENG,HSIAO-LI
+■ Page: 1 page
 ■ CSS Preprocessor: sass
 ■ HTML Preprocessor: pug
+■ Bootstrap version: none
+■ Responsive Web Design: none
+■ CSS reset: none
 ■ Production Time: 5hours
-■ View in Codepen: "https://codepen.io/peng-hsiao-li/pen/vYxROgQ"
+■ View in Codepen: https://codepen.io/peng-hsiao-li/pen/vYxROgQ
